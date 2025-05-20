@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Catalogue - 🧨𓅒S͜͡a͜͡s͜͡h͜͡a͜͡ 𓆥💋✨</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff4d94, #ffd700);
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Catalogue Section */
+        .catalogue {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Sasha/image/image.jpg') no-repeat center/cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .catalogue-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .catalogue-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .catalogue-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .catalogue-card h3 {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .catalogue-card .brand {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .catalogue-card .price {
+            color: #ff4d94;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        .catalogue-card .original-price {
+            color: #888;
+            text-decoration: line-through;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+
+        .catalogue-card .discount {
+            color: #ffd700;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+
+        .catalogue-card .rating {
+            color: #ffd700;
+            padding: 5px 10px;
+            font-size: 1em;
+        }
+
+        .catalogue-card .buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .catalogue-card button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .catalogue-card .buy-btn {
+            background:brown;
+            color: #fff;
+        }
+
+        .catalogue-card .swap-btn {
+            background: #ffd700;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .catalogue {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧨𓅒S͜͡a͜͡s͜͡h͜͡a͜͡ 𓆥💋✨</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Swap</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section class="catalogue">
+        <div class="catalogue-card">
+            <img src="Sasha/image/Evening outfit.webp" alt="Evening Dress">
+            <h3>Evening Dress</h3>
+            <div class="brand">Brand: Zara</div>
+            <div class="price">$199.99</div>
+            <div class="rating">★★★★★ (5.0)</div>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="swap-btn">Swap</button>
+            </div>
+        </div>
+        <div class="catalogue-card">
+            <img src="Sasha/image/dress2.jpg" alt="Summer Dress">
+            <h3>Summer Dress</h3>
+            <div class="brand">Brand: H&M</div>
+            <div class="price">$89.99 <span class="original-price">$129.99</span> <span class="discount">30% OFF</span></div>
+            <div class="rating">★★★★☆ (4.2)</div>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="swap-btn">Swap</button>
+            </div>
+        </div>
+        <div class="catalogue-card">
+            <img src="Sasha/image/Sweet Pink Flare Sleeve Bow Dress - Pink _ L.jpeg" alt="Cocktail Dress">
+            <h3>Cocktail Dress</h3>
+            <div class="brand">Brand: Mango</div>
+            <div class="price">$149.99</div>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="swap-btn">Swap</button>
+            </div>
+        </div>
+        <div class="catalogue-card">
+            <img src="Sasha/image/dress4.jpg" alt="Floral Dress">
+            <h3>Floral Dress</h3>
+            <div class="brand">Brand: ASOS</div>
+            <div class="price">$99.99 <span class="original-price">$139.99</span> <span class="discount">28% OFF</span></div>
+            <div class="rating">★★★★☆ (4.5)</div>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="swap-btn">Swap</button>
+            </div>
+        </div>
+        <div class="catalogue-card">
+            <img src="Sasha/image/dress5.jpg" alt="Maxi Dress">
+            <h3>Maxi Dress</h3>
+            <div class="brand">Brand: Forever 21</div>
+            <div class="price">$79.99</div>
+            <div class="rating">★★★☆☆ (3.8)</div>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="swap-btn">Swap</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 🧨𓅒S͜͡a͜͡s͜͡h͜͡a͜͡ 𓆥💋✨. All rights reserved.</p>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Newsletter</a>
+    </footer>
+</body>
+</html>

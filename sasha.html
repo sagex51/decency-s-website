@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧨𓅒S͜͡a͜͡s͜͡h͜͡a͜͡ 𓆥💋✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, rosybrown, brown);
+            color: rosybrown;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Wrapper for Search, Video, and Products with Background Image */
+        .main-content {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Sasha/image/image.jpg') no-repeat center/cover;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        /* Search Bar Section */
+        .search-section {
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar select,
+        .search-bar input {
+            padding: 12px;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            border: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar select {
+            width: 160px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(135deg, rosybrown, brown);
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+
+        .search-bar select:hover {
+            background-image: linear-gradient(135deg, rosybrown, brown);
+            box-shadow: 0 4px 15px rgba(255, 77, 148, 0.3);
+        }
+
+        .search-bar select option {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+        }
+
+        .search-bar select option:hover {
+            background: linear-gradient(135deg, rosybrown, brown);
+        }
+
+        .search-bar input {
+            width: 350px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .search-bar input::placeholder {
+            font-family: 'Roboto', sans-serif;
+            color: #888;
+        }
+
+        .search-bar button {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, rosybrown, brown);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rosybrown, brown);
+            box-shadow: 0 4px 15px rgba(255, 77, 148, 0.5);
+        }
+
+        /* Video Section
+        .video-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-section video {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 20px;
+            border: 2px solid #ffd700;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .video-section video:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        } */
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .product-card p {
+            color: #555;
+            padding: 0 10px 10px;
+        }
+
+        .product-card .buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .product-card button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .product-card .buy-btn {
+            background:  rosybrown;
+            color: #fff;
+        }
+
+        .product-card .swap-btn {
+            background: #ffd700;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #current-time {
+            font-size: 0.9em;
+            color: #ffd700;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .search-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .search-bar select,
+            .search-bar input,
+            .search-bar button {
+                width: 100%;
+            }
+
+            .video-section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧨𓅒S͜͡a͜͡s͜͡h͜͡a͜͡ 𓆥💋✨</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Swap</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <!-- Wrapper for Search, Video, and Products -->
+    <div class="main-content">
+        <section class="search-section">
+            <div class="search-bar">
+                <select>
+                    <option value="">All Categories</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="watches">Watches</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search dresses, watches, accessories...">
+                <button id="search-button">Search</button>
+            </div>
+        </section>
+
+        <!-- Video Section
+        <section class="video-section">
+            <video autoplay loop playsinline controls>
+                <source src="Sasha/video/promo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section> -->
+
+        <section class="products">
+            <div class="product-card">
+                <img src="Sasha/image/Sweet Pink Flare Sleeve Bow Dress - Pink _ L.jpeg" alt="Evening Dress">
+                <h3>Evening Dress</h3>
+                <p>$199.99</p>
+                <div class="buttons">
+                    <button class="buy-btn">Buy Now</button>
+                    <button class="swap-btn">Swap</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Sasha/image/beautoful watch.jpeg" alt="Luxury Watch">
+                <h3>Luxury Watch</h3>
+                <p>$299.99</p>
+                <div class="buttons">
+                    <button class="buy-btn">Buy Now</button>
+                    <button class="swap-btn">Swap</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="Sasha/image/gold%20necklace.jpg" alt="Gold Necklace">
+                <h3>Gold Necklace</h3>
+                <p>$149.99</p>
+                <div class="buttons">
+                    <button class="buy-btn">Buy Now</button>
+                    <button class="swap-btn">Swap</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 🧨𓅒S͜͡a͜͡s͜͡h͜͡a͜͡ 𓆥💋✨. All rights reserved. <span id="current-time"></span></p>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Newsletter</a>
+    </footer>
+
+    <script>
+        // Function to format the current date and time in WAT
+        function displayCurrentTime() {
+            const options = {
+                timeZone: 'Africa/Lagos',
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+            const now = new Date().toLocaleString('en-US', options);
+            const formattedTime = now.replace(/,/, '').replace(/(\d+:\d+:\d+\s[AP]M)/, '$1 WAT on');
+            document.getElementById('current-time').textContent = formattedTime;
+        }
+
+        // Update the time every second
+        setInterval(displayCurrentTime, 1000);
+        displayCurrentTime();
+
+        // Search functionality
+        document.getElementById('search-button').addEventListener('click', function() {
+            const searchInput = document.getElementById('search-input').value.toLowerCase();
+            if (searchInput.includes('dress')) {
+                window.location.href = 'dresses.html';
+            }
+        });
+    </script>
+</body>
+</html>
